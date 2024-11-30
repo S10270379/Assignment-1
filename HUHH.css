@@ -477,3 +477,183 @@ table {
 #description p {
     margin-bottom: 1.5em;
 }
+
+/* Responsive Design */
+/* Responsive Design Additions */
+
+/* General Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+    .header_background {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-bar {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+/* Responsive Adjustments for Home Page */
+@media screen and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whats-new, .New-Releases {
+        width: 90%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .top_music {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .top_music div {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .top_music img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .social_media {
+        width: 90%;
+        align-items: center;
+    }
+
+    .social_media_links {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Responsive Adjustments for Shop Page */
+@media screen and (max-width: 768px) {
+    #product-cards {
+        margin-top: 10%;
+        padding: 5%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .card-img-top {
+        height: 250px;
+    }
+
+    .shop-item-title {
+        font-size: 1rem;
+    }
+
+    .shop-item-price {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive Adjustments for World Tour Page */
+@media screen and (max-width: 768px) {
+    .Title h6 {
+        font-size: 50px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    table td, table th {
+        padding: 5px;
+    }
+}
+
+/* Responsive Adjustments for About Page */
+@media screen and (max-width: 992px) {
+    #about {
+        flex-direction: column;
+        margin-inline: 5%;
+        padding: 2%;
+    }
+
+    #about_img_title {
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+
+    #about_img_title img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    #description {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .nav-bar {
+        font-size: medium;
+    }
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Flexible Video */
+.video video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Flexible Containers */
+.container-fluid, .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
