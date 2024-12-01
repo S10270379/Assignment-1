@@ -1,176 +1,170 @@
 .body_Home{
-    background-image: url('./Videos&Images/Home_background.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url('./Videos&Images/Home_background.webp'); /* Set background image */
+    background-size: cover; /* Cover the entire area */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Keep the background fixed during scroll */
+    background-position: center; /* Center the background image */
 }
 
 
-
+/* Global Reset and Base Styling */
 *{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    text-decoration: none;
+    margin: 0;                  /* Remove default margins */
+    padding: 0;                 /* Remove default padding */
+    font-family: sans-serif;    /* Set a default font for the entire site */
+    box-sizing: border-box;     /* Include padding and border in element's total width and height */
+    text-decoration: none;      /* Remove default underlines from links */
 }
 
 h1 {
-    display: flex;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    align-items: center;
-    text-decoration: none;
+    display: flex; /* Use flexbox for alignment */
+    font-size: 24px; /* Set font size */
+    font-weight: bold; /* Make text bold */
+    color: white; /* Set text color to white */
+    align-items: center; /* Vertically center items */
+    text-decoration: none; /* Remove underline */
 }
 
 .header_background{
-    padding: 1px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    position: sticky;
-    z-index: 1000;
-    background-color: black;
-    margin-bottom: 5%;
-    text-decoration: none;
+    padding: 1px 5%; /* Padding for header content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Spread out logo and navigation */
+    align-items: center; /* Vertically center header items */
+    position: sticky; /* Header stays at top when scrolling */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure header is above other content */
+    background-color: black; /* Dark background for header */
+    margin-bottom: 5%; /* Space below header */
 }
 
 .nav{
-    display: flex;
-    justify-content: right;
+    display: flex; /* Flexbox layout for navigation */
+    justify-content: right; /* Align navigation items to the right */
 }
 
 .nav-bar{
-    display: inline-block;
-    justify-content: right;
-    padding: 5px;
-    padding-inline: 10px;
-    margin: 1px;
-    font-size: large;
-    font-weight: bolder;
-    color: white;
-    text-transform: uppercase;
+    display: inline-block;       /* Display nav items in a line */
+    padding: 5px 10px;           /* Internal spacing for nav items */
+    margin: 1px;                 /* Minimal spacing between nav items */
+    font-size: large;            /* Larger font size */
+    font-weight: bolder;         /* Bold text */
+    color: white;                /* White text color */
+    text-transform: uppercase;   /* Uppercase navigation text */
 }
 
 .nav-bar a{
-    font-size: large;
-    font-weight: bolder;
-    color: white;
-    text-decoration: none;
+    font-size: large; /* Set font size for links */
+    font-weight: bolder; /* Make links bold */
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
 }
 .nav-bar :hover{
-    color: #56caff;
+    color: #56caff;              /* Light blue color on hover */
 }
 
 
 /* Home CSS */
 .video{
-    text-align: center;
+    text-align: center;          /* Center the video */
 }
 
 .video video{
-    display: block; /* Ensures no extra inline spacing */
-    width: 100%; /* Fits the video's width dynamically */
-    max-width: 1280px; /* Matches the video's dimensions */
-    height: auto; /* Maintains the aspect ratio */
-    border: 10px solid #17152a; /* Defines the border */
-    box-sizing: border-box; /* Includes the border in the total size */
-    margin: 0 auto; /* Centers the video container */
+    display: block;              /* Remove inline spacing */
+    width: 100%;                 /* Responsive width */
+    max-width: 1280px;           /* Maximum width */
+    height: auto;                /* Maintain aspect ratio */
+    border: 10px solid #17152a;  /* Dark border around video */
+    margin: 0 auto;              /* Center the video */
 }
 
 .container{
-    display: flex;
-    margin-top: 10%;
-    flex-direction: row;
-    justify-content: center;
+    display: flex;               /* Flexbox layout */
+    margin-top: 10%;             /* Space from top */
+    justify-content: center;     /* Center content horizontally */
 }
 h2{
-    text-align: center;
-    padding-top:5%;
-    padding-bottom: 5%;
-    font-weight: bolder;
+    text-align: center; /* Center text */
+    padding-top: 5%; /* Top padding */
+    padding-bottom: 5%; /* Bottom padding */
+    font-weight: bolder; /* Make text bold */
 }
 
 .whats-new{
-    border-top-style: solid;
-    border-top-color: #6c5cff;
-    color: white;
-    justify-content: flex-start;
-    background-color: rgb(0, 0, 0);
-    margin-inline: 3%;
-    padding-inline: 3%;
-    width: 25%;
+    border-top-style: solid; /* Solid border on top */
+    border-top-color: #6c5cff; /* Color of the top border */
+    color: white; /* Text color */
+    justify-content: flex-start; /* Align items to the start */
+    background-color: rgb(0, 0, 0); /* Black background */
+    margin-inline: 3%; /* Margin on the sides */
+    padding-inline: 3%; /* Padding on the sides */
+    width: 25%; /* Set width */
 }
 
 .New-Releases{
-    border-top-style: solid;
-    border-top-color: #6c5cff;
-    background-color: #17152a;
-    color: white;
-    padding-inline: 5%; 
+    border-top-style: solid; /* Solid border on top */
+    border-top-color: #6c5cff; /* Color of the top border */
+    background-color: #17152a; /* Dark background */
+    color: white; /* Text color */
+    padding-inline: 5%; /* Padding on the sides */
 }
 
 .news_topic{
-    font-family: 'Times New Roman', Times, serif;
-    font-size:x-large;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    font-size: x-large; /* Font size */
+    padding-top: 5%; /* Top padding */
 }
 
 .news_date{
-    font-weight: bold;
-    font-size:x-large;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    border-top-style: solid;
-    border-top-color: #6c5cff;
+    font-weight: bold; /* Make text bold */
+    font-size: x-large; /* Set font size */
+    padding-top: 5%; /* Top padding */
+    padding-bottom: 5%; /* Bottom padding */
+    border-top-style: solid; /* Solid top border */
+    border-top-color: #6c5cff; /* Color of the top border */
 }
 
 .top_music{
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    border-top-style: solid;
-    border-top-color: #6c5cff;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    flex-direction: row; /* Arrange items in a row */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    justify-content: center; /* Center items */
+    border-top-style: solid; /* Solid top border */
+    border-top-color: #6c5cff; /* Color of the top border */
+    padding-top: 5%; /* Top padding */
+    padding-bottom: 5%; /* Bottom padding */
 }
 
 .music_title{
-    font-size: x-large;
-    text-align: center;
+    font-size: x-large; /* Set font size */
+    text-align: center; /* Center text */
 }
 
 .top_music_videos{
-    margin-left: 5%;
+    margin-left: 5%; /* Left margin */
 }
 
 footer{
-    display: flex;
-    padding-top: 2%;
-    margin-top: 5%;
-    background-color: rgb(0, 0, 0);
-    padding-left: 10%;
-    justify-content: center;
+    display: flex; /* Use flexbox layout */
+    padding-top: 2%; /* Top padding */
+    margin-top: 5%; /* Margin above footer */
+    background-color: rgb(0, 0, 0); /* Black background */
+    padding-left: 10%; /* Left padding */
+    justify-content: center; /* Center footer content */
 }
 
 .footer_img{
-    display: flex;
-    padding-left: 10%;
+    display: flex; /* Use flexbox layout */
+    padding-left: 10%; /* Left padding */
 }
 
 .social_media {
-    display: flex;
+    display: flex; /* Use flexbox layout */
     flex-direction: column; /* Arrange each social media link in a column */
-    align-items: flex-start;
-    background-color: black;
-    padding: 2%;
-    margin: 0 auto;
-    width: 30%; /* Adjust width as needed */
+    align-items: flex-start; /* Align items to the start */
+    background-color: black; /* Black background */
+    padding: 2%; /* Padding for the section */
+    margin: 0 auto; /* Center the section */
+    width: 30%; /* Set width of the social media section */
 }
 
 .social_media_links {
@@ -178,316 +172,316 @@ footer{
     align-items: center; /* Vertically align image and text */
     margin-bottom: 15px; /* Space between each social media link */
     gap: 10px; /* Space between the image and the text */
-    padding-bottom: 20px;
+    padding-bottom: 20px; /* Bottom padding */
 }
 
 .social_media_links img {
-    padding-right: 5px;
-    width: 55px;
-    height: 50px;
+    padding-right: 5px; /* Right padding for image */
+    width: 55px; /* Set width of the image */
+    height: 50px; /* Set height of the image */
 }
 
 .social_media_links a {
-    display: flex;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    align-items: center;
-    line-height: 1.2;
+    display: flex; /* Use flexbox for alignment */
+    color: white; /* Set text color to white */
+    font-size: 1rem; /* Set font size */
+    font-weight: bold; /* Make text bold */
+    font-family: 'Times New Roman', Times, serif; /* Set font family */
+    margin: 0; /* Remove default margin */
+    align-items: center; /* Vertically align items */
+    line-height: 1.2; /* Set line height */
 }
 
 /* Shop CSS */
 #body_Shop{
-    background-image: url(./Videos&Images/Store_background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url(./Videos&Images/Store_background.png); /* Set background image */
+    background-size: cover; /* Cover the entire area */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Keep the background fixed during scroll */
+    background-position: center; /* Center the background image */
 }
 
 .Shopping_cart{
-    display: flex;
-    background-color: transparent;
-    border: none;
-    align-items: center;
+    display: flex; /* Use flexbox layout */
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    align-items: center; /* Center items vertically */
 }
 
 .container-fluid{
     overflow: hidden; /* Keeps blur inside the container */
     backdrop-filter: blur(10px); /* Applies blur to the background */
-    background-color: rgba(120, 120, 120, 0.3);
-    padding-top: 5%;
+    background-color: rgba(120, 120, 120, 0.3); /* Semi-transparent background */
+    padding-top: 5%; /* Top padding */
 }
 
 .row{
-    display: flex;
-    margin-bottom: 10%;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
+    display: flex; /* Use flexbox layout */
+    margin-bottom: 10%; /* Bottom margin */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: center; /* Center items */
+    justify-content: space-evenly; /* Space items evenly */
 }
 
 .item{
-    display: flex;
-    justify-content: center;
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center items */
 }
 
 #product-cards {
-    margin-top: 30%;
-    padding: 5% 10%;
+    margin-top: 30%; /* Margin from the top */
+    padding: 5% 10%; /* Padding on the sides */
 }
 
 .row-cols-md-4 {
     /* Change to 3 columns instead of 4 */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Define 3 equal columns */
 }
 
 .card {
     /* Add some styling to make cards look neat */
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
 
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 5px 0 50px #008cff;
-    text-wrap:wrap;
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 5px 0 50px #008cff; /* Change shadow on hover */
+    text-wrap: wrap; /* Allow text to wrap */
 }
 
 
 .card-img-top {
-    height: 300px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    height: 300px; /* Fixed height for images */
+    object-fit: cover; /* Cover the image area */
+    border-top-left-radius: 10px; /* Rounded top-left corner */
+    border-top-right-radius: 10px; /* Rounded top-right corner */
 }
 
 .card-body {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items in a column */
+    padding: 10px; /* Padding inside card body */
 }
 
 .shop-item-title {
-    display: flex;
-    justify-content: center;
-    max-width: 75ch;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-    color: white;
-    text-wrap:wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center title */
+    max-width: 75ch; /* Maximum width */
+    font-weight: bold; /* Make text bold */
+    margin-bottom: 10px; /* Bottom margin */
+    text-align: center; /* Center text */
+    color: white; /* Text color */
+    text-wrap: wrap; /* Allow text to wrap */
+    word-break: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Ensure words wrap */
 }
 
 .shop-item-price {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 15px;
+    text-align: center; /* Center text */
+    font-size: 1.2rem; /* Font size */
+    color: #ffffff; /* White text color */
+    margin-bottom: 15px; /* Bottom margin */
 }
 
 .shop-item-button {
-    margin-top: auto;
-    background-color: #ffc107;
-    border-color: #000000;
-    color: black;
-    width: 100%;
-    margin-right: 4%;
-    transition: background-color 1s ease;
+    margin-top: auto; /* Push button to the bottom */
+    background-color: #ffc107; /* Yellow background */
+    border-color: #000000; /* Black border */
+    color: black; /* Black text color */
+    width: 100%; /* Full width */
+    margin-right: 4%; /* Right margin */
+    transition: background-color 1s ease; /* Smooth transition for background color */
 }
 
 .shop-item-button:hover {
-    background-color: #ffca28;
+    background-color: #ffca28; /* Change background color on hover */
 }
 
 .content-section{
     overflow: hidden; /* Keeps blur inside the container */
     backdrop-filter: blur(10px); /* Applies blur to the background */
-    background-color: rgba(120, 120, 120, 0.3);
-    color: white;
-    flex-direction: column;
+    background-color: rgba(120, 120, 120, 0.3); /* Semi-transparent background */
+    color: white; /* Set text color to white */
+    flex-direction: column; /* Arrange items in a column */
 }
 
 h3{
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 7%;
+    text-decoration: underline; /* Underline text */
+    text-align: center; /* Center text */
+    margin-bottom: 7%; /* Bottom margin */
 }
 
  .btn-purchase{
-   text-align: center;
-   margin: auto;
-   padding: 2%;
-   width: 50%;
+    text-align: center; /* Center align text */
+    margin: auto; /* Center the button */
+    padding: 2%; /* Padding inside the button */
+    width: 50%; /* Set button width to 50% */
  }
 
  #shopping-cart{
-   padding: 5% 5%;
+    padding: 5% 5%; /* Padding on all sides */
  }
 
 .table-cart{
-    border-bottom-color: #eee;
-    border-bottom-style: solid;
-    border-width: 1px;
-    margin-bottom: 25px;
+    border-bottom-color: #eee; /* Light gray color for bottom border */
+    border-bottom-style: solid; /* Solid bottom border */
+    border-width: 1px; /* Width of the border */
+    margin-bottom: 25px; /* Bottom margin */
 }
 
  .cart-total{
-   text-align: right;
-   font-size: 1.3rem;
+    text-align: right; /* Align text to the right */
+    font-size: 1.3rem; /* Set font size */
  }
 
 .up-icon{
-   color: black;
-   position: fixed;
-   float: right;
-   z-index: 1;
-   left: 95%;
-   top: 85%;
-   font-size: 2rem;
+    color: black; /* Set icon color to black */
+    position: fixed; /* Fixed positioning */
+    float: right; /* Align to the right */
+    z-index: 1; /* Ensure it appears above other elements */
+    left: 95%; /* Position from the left */
+    top: 85%; /* Position from the top */
+    font-size: 2rem; /* Set font size */
  }
 
 
 /* World Tour CSS */
 #body_worldtour{
-    background-image:url('./Videos&Images/Tour_background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-image: url('./Videos&Images/Tour_background.png'); /* Set background image */
+    background-size: cover; /* Cover the entire area */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Keep the background fixed during scroll */
 }
 
 
 .Title{
-    display: flex;
+    display: flex; /* Use flexbox layout */
     overflow: hidden; /* Keeps blur inside the container */
     backdrop-filter: blur(7px); /* Applies blur to the background */
-    background-color: #0f0f0f80;
-    box-shadow: 50px 0 2000px #e0595980;
-    flex-direction: column;
-    margin-top: 50%;
-    font-size: xx-large;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    background-color: #0f0f0f80; /* Semi-transparent dark background */
+    box-shadow: 50px 0 2000px #e0595980; /* Shadow effect */
+    flex-direction: column; /* Arrange items in a column */
+    margin-top: 50%; /* Margin from the top */
+    font-size: xx-large; /* Set font size */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    color: white; /* Set text color to white */
 }
 
 h6{
-    font-size: 90px;
-    padding-bottom: 15%;
+    font-size: 90px; /* Set font size */
+    padding-bottom: 15%; /* Bottom padding */
 }
 
 .continent{
-    display: flex;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    color: white;
-    font-size: xx-large;
-    justify-content: center;
+    display: flex; /* Use flexbox layout */
+    padding-top: 5%; /* Top padding */
+    padding-bottom: 5%; /* Bottom padding */
+    color: white; /* Set text color to white */
+    font-size: xx-large; /* Set font size */
+    justify-content: center; /* Center items */
     overflow: hidden; /* Keeps blur inside the container */
     backdrop-filter: blur(7px); /* Applies blur to the background */
-    background-color: #0f0f0f80;
+    background-color: #0f0f0f80; /* Semi-transparent dark background */
 }
 
 .blur_table{
     overflow: hidden; /* Keeps blur inside the container */
     backdrop-filter: blur(7px); /* Applies blur to the background */
-    background-color: #0f0f0f80;
-    color: white;
+    background-color: #0f0f0f80; /* Semi-transparent dark background */
+    color: white; /* Set text color to white */
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders between cells */
+    font-family: Arial, sans-serif; /* Font family for the table */
   }
   
   thead th {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: left;
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text color */
+    padding: 10px; /* Padding inside header cells */
+    text-align: left; /* Left align text */
   }
   
   tbody td {
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Light gray bottom border */
+    padding: 10px; /* Padding inside cells */
   }
   
   a {
-    color: #0077b6;
-    text-decoration: none;
+    color: #0077b6; /* Link color */
+    text-decoration: none; /* Remove underline */
   }
   
   a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
   }
   
   .sold-out {
-    background-color: #ccc;
-    color: #666;
-    padding: 5px 10px;
-    border-radius: 4px;
+    background-color: #ccc; /* Gray background for sold-out items */
+    color: #666; /* Dark gray text color */
+    padding: 5px 10px; /* Padding inside the sold-out label */
+    border-radius: 4px; /* Rounded corners */
   }
 
 
 /* About Us CSS*/
 #body_AboutUs{
-    background-image: url(./Videos&Images/About_background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position: center;
+    background-image: url(./Videos&Images/About_background.jpg); /* Set background image */
+    background-size: cover; /* Cover the entire area */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Keep the background fixed during scroll */
+    background-position: center; /* Center the background image */
 }
 
 #about{
-    padding:4%;
-    display: flex;    
-    flex-direction: row;
-    color: white;
-    align-items: center;
-    border: 2px solid white;
-    margin-inline: 10%;
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    padding: 4%; /* Padding inside the about section */
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Arrange items in a row */
+    color: white; /* Set text color to white */
+    align-items: center; /* Center items vertically */
+    border: 2px solid white; /* White border around the section */
+    margin-inline: 10%; /* Margin on the left and right */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); /* Soft white shadow effect */
 }
 
 #about_img_title{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 20px;
-    padding-right: 10%;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Arrange items in a column */
+    text-align: center; /* Center text */
+    font-family: 'Times New Roman', Times, serif; /* Font family for title */
+    font-size: 2rem; /* Font size for title */
+    color: white; /* Set text color to white */
+    margin-bottom: 20px; /* Bottom margin */
+    padding-right: 10%; /* Right padding */
 }
 
 #about_img_title img {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Bottom margin for images */
 }
 
 #description {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.8;
-    text-align: justify;
-    margin: 0;
-    color: white;
-    font-size: large;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items in a column */
+    font-family: Arial, sans-serif; /* Font family for description */
+    font-size: 1rem; /* Font size for description */
+    line-height: 1.8; /* Line height for readability */
+    text-align: justify; /* Justify text alignment */
+    margin: 0; /* Remove default margin */
+    color: white; /* Set text color to white */
+    font-size: large; /* Set font size to large */
 }
 
 #description p {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5em; /* Bottom margin for paragraphs */
 }
 
 /* Responsive Design */
@@ -496,176 +490,176 @@ table {
 /* General Responsive Adjustments */
 @media screen and (max-width: 1200px) {
     .header_background {
-        flex-direction: column;
-        padding: 10px;
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px; /* Add padding */
     }
 
     h1 {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 20px; /* Reduce font size */
+        margin-bottom: 10px; /* Adjust bottom margin */
     }
 
     .nav {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap; /* Allow navigation items to wrap */
+        justify-content: center; /* Center navigation items */
     }
 
     .nav-bar {
-        margin: 5px;
-        padding: 5px;
+        margin: 5px; /* Add margin */
+        padding: 5px; /* Add padding */
     }
 }
 
 /* Responsive Adjustments for Home Page */
 @media screen and (max-width: 992px) {
     .container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
     }
 
     .whats-new, .New-Releases {
-        width: 90%;
-        margin: 10px auto;
-        padding: 15px;
+        width: 90%; /* Set width to 90% */
+        margin: 10px auto; /* Center with margin */
+        padding: 15px; /* Add padding */
     }
 
     .top_music {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center items */
     }
 
     .top_music div {
-        margin: 10px;
-        text-align: center;
+        margin: 10px; /* Add margin */
+        text-align: center; /* Center text */
     }
 
     .top_music img {
-        max-width: 250px;
-        height: auto;
+        max-width: 250px; /* Set maximum width */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .social_media {
-        width: 90%;
-        align-items: center;
+        width: 90%; /* Set width to 90% */
+        align-items: center; /* Center items */
     }
 
     .social_media_links {
-        width: 100%;
-        justify-content: center;
+        width: 100%; /* Full width */
+        justify-content: center; /* Center items */
     }
 }
 
 /* Responsive Adjustments for Shop Page */
 @media screen and (max-width: 768px) {
     #product-cards {
-        margin-top: 10%;
-        padding: 5%;
+        margin-top: 10%; /* Add top margin */
+        padding: 5%; /* Add padding */
     }
 
     .row {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
     }
 
     .item {
-        width: 90%;
-        margin-bottom: 20px;
+        width: 90%; /* Set width to 90% */
+        margin-bottom: 20px; /* Add bottom margin */
     }
 
     .card {
-        width: 100%;
-        max-width: 350px;
+        width: 100%; /* Full width */
+        max-width: 350px; /* Set maximum width */
     }
 
     .card-img-top {
-        height: 250px;
+        height: 250px; /* Set fixed height */
     }
 
     .shop-item-title {
-        font-size: 1rem;
+        font-size: 1rem; /* Set font size */
     }
 
     .shop-item-price {
-        font-size: 1rem;
+        font-size: 1rem; /* Set font size */
     }
 }
 
 /* Responsive Adjustments for World Tour Page */
 @media screen and (max-width: 768px) {
     .Title h6 {
-        font-size: 50px;
+        font-size: 50px; /* Reduce font size */
     }
 
     table {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Reduce font size */
     }
 
     table td, table th {
-        padding: 5px;
+        padding: 5px; /* Reduce padding */
     }
 }
 
 /* Responsive Adjustments for About Page */
 @media screen and (max-width: 992px) {
     #about {
-        flex-direction: column;
-        margin-inline: 5%;
-        padding: 2%;
+        flex-direction: column; /* Stack items vertically */
+        margin-inline: 5%; /* Adjust side margins */
+        padding: 2%; /* Add padding */
     }
 
     #about_img_title {
-        margin-bottom: 20px;
-        padding-right: 0;
+        margin-bottom: 20px; /* Bottom margin */
+        padding-right: 0; /* Remove right padding */
     }
 
     #about_img_title img {
-        max-width: 250px;
-        height: auto;
+        max-width: 250px; /* Set maximum width */
+        height: auto; /* Maintain aspect ratio */
     }
 
     #description {
-        text-align: left;
-        font-size: 0.9rem;
+        text-align: left; /* Align text to the left for better readability */
+        font-size: 0.9rem; /* Set font size to a smaller size for better fit */
     }
 }
 
 /* Responsive Typography */
 @media screen and (max-width: 576px) {
     body {
-        font-size: 14px;
+        font-size: 14px; /* Set base font size to 14px */
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 18px; /* Set font size for h1 to 18px */
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Set font size for h2 to 1.5rem */;
     }
 
     .nav-bar {
-        font-size: medium;
+        font-size: medium; /* Set font size to medium for nav-bar items */
     }
 }
 
 /* Responsive Images */
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure images do not exceed their container's width */
+    height: auto; /* Maintain aspect ratio of images */
 }
 
 /* Flexible Video */
 .video video {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Set video width to 100% of its container */
+    max-width: 100%; /* Ensure video does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio of videos */
 }
 
 /* Flexible Containers */
 .container-fluid, .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%; /* Set container width to 100% for full responsiveness */
+    padding-right: 15px; /* Add right padding for spacing */
+    padding-left: 15px; /* Add left padding for spacing */
+    margin-right: auto; /* Center the container on the right */
+    margin-left: auto; /* Center the container on the left */
 }
