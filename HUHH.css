@@ -383,6 +383,18 @@ h6{
     padding-bottom: 15%;
 }
 
+.continent{
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    font-size: xx-large;
+    justify-content: center;
+    overflow: hidden; /* Keeps blur inside the container */
+    backdrop-filter: blur(7px); /* Applies blur to the background */
+    background-color: #0f0f0f80;
+}
+
 .blur_table{
     overflow: hidden; /* Keeps blur inside the container */
     backdrop-filter: blur(7px); /* Applies blur to the background */
